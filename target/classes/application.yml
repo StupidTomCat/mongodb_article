@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      host: 175.24.117.235 #主机地址
+      database: articledb #数据库
+      port: 27017 #端口（默认的也可以不写）  也可以使用uri连接:mongodb://175.24.117.235:27017/articledb
