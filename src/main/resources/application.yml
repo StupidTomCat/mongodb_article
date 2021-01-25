@@ -4,4 +4,5 @@ spring:
 #      host: 175.24.117.235 #主机地址
 #      database: articledb #数据库
 #      port: 27017 #端口（默认的也可以不写）  也可以使用uri连接:mongodb://175.24.117.235:27017/articledb
-      uri:  mongodb://175.24.117.235:27017,175.24.117.235:27018,175.24.117.235:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
+#      uri:  mongodb://175.24.117.235:27017,175.24.117.235:27018,175.24.117.235:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs  单单副本集的连接方式
+      uri:  mongodb://175.24.117.235:27017,175.24.117.235:27117/articledb #写上两个路由节点
